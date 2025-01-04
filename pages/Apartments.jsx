@@ -49,11 +49,11 @@ const Apartments = () => {
             </nav>
             <div className="container mt-4" >
                 <h1 style={{fontFamily:'"Brush Script MT", cursive',fontSize:'70px'}}>Available Apartments</h1>
-                <div className="row" style={{margin:'80px'}}>
+                <div className="row g-4" style={{margin:'80px'}}>
                     {apartments.map((apartment) => (
-                        <div key={apartment.id} className="col-md-4">
-                            <div className="card mb-4" style={{height:'500px',width:'300px',margin:'20px',marginLeft:'10px',marginRight:'10px',backgroundColor:'hsla(37, 55.60%, 70.00%, 0.64)',border:'2px solid black'}}>
-                                <img style={{height:'300px',width:'275px',margin:'10px',border:'1px solid black'}}
+                        <div key={apartment.id} className="col-12 col-sm-6 col-md-4">
+                            <div className="card h-100" style={{margin:'20px',marginLeft:'10px',marginRight:'10px',backgroundColor:'hsla(37, 55.60%, 70.00%, 0.64)',border:'2px solid black'}}>
+                                <img style={{height:'300px',objectFit:'cover',border:'1px solid black'}}
                                     src={apartment.image}
                                     className="card-img-top"
                                     alt={apartment.name}
